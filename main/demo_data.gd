@@ -7,8 +7,7 @@ class_name DemoData
 @export_multiline var description := ""
 
 static func setup(initial_title: String, intial_texture: Texture2D, initial_path: String, initial_description: String) -> DemoData:
-	assert(FileAccess.file_exists(initial_path), "The scene at path %s was not found." % initial_path)
-
+	#assert(FileAccess.file_exists(initial_path), "The scene at path %s was not found." % initial_path)
 	var data := DemoData.new()
 	data.title = initial_title
 	data.thumbnail = intial_texture

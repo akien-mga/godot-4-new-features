@@ -280,4 +280,3 @@ func resume() -> void:
 	if scene_tree.current_scene:
 		scene_tree.current_scene.process_mode = Node.PROCESS_MODE_ALWAYS
 		Input.mouse_mode = _cached_mouse_mode
-

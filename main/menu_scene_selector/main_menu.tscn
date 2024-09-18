@@ -151,8 +151,8 @@ tracks/4/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3t8ej"]
 _data = {
-"RESET": SubResource("Animation_yxlpw"),
-"appear": SubResource("Animation_x5cg5")
+&"RESET": SubResource("Animation_yxlpw"),
+&"appear": SubResource("Animation_x5cg5")
 }
 
 [node name="MainMenu" type="CanvasLayer"]
@@ -304,7 +304,7 @@ text = "Quit"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_3t8ej")
+&"": SubResource("AnimationLibrary_3t8ej")
 }
 
 [node name="JingleOpen" type="AudioStreamPlayer" parent="."]

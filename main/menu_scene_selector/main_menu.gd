@@ -14,6 +14,9 @@ const CardSelector = preload("res://main/menu_scene_selector/card_selector.gd")
 var _is_open = false : set = set_is_open
 
 func _ready():
+	ProjectSettings.load_resource_pack("2d.pck")
+	ProjectSettings.load_resource_pack("3d.pck")
+
 	hide()
 	animation_player.play("RESET")
 	card_selector.connect("cards_index_changed", func(): arrow_button_sound.play())
